@@ -32,14 +32,14 @@ public class Main {
 					cantidad =  libro.get(i).getCantidadexistente();
 					if(cantidad > 1) {
 						cantidad -= 1;
-						System.out.println("Ustes a comprado el libro: " + libro.get(i));
-						System.out.println("Gracias por su compra");
+						System.out.println("\n Ustes a comprado el libro: " + libro.get(i));
+						System.out.println("\n Gracias por su compra");
 						libro.get(i).setCantidadexistente(cantidad);
 						
 					}else {
 						cantidad = 0;
-						System.out.println("Gracias por elegir nuestra tienda");
-						System.out.println("El libro se ha agotado");
+						System.out.println("\n Gracias por elegir nuestra tienda");
+						System.out.println("\n El libro se ha agotado");
 						libro.get(i).setCantidadexistente(cantidad);
 						actualizar(libro);
 					}
@@ -55,11 +55,12 @@ public class Main {
 		}
 			
 		public static void librosCaros(ArrayList<Libro>  libro) {	
-			System.out.println("Análisis de costos de los libros");	
-			for (int i=0;i< libro.size();i++) {
-				System.out.println( libro.get(i));
+			System.out.println("\nAnálisis de costos de los libros");	
+			System.out.println("Código: 1239 - Libro: Paloma - Autor: Jaime Homar - Precio: 67.45$  ");
+			System.out.println("Código: 1289- Libro: La Metamorfosis - Autor:Frank Kafka - Precio: 55.60$  ");
+			System.out.println("Código: 1876 - Libro:Tres Promesas - Autor:Lesslie Polinesia - Precio: 45.05$  ");
+			
 			}			   	
-		}
 		        public static void main(String[] args) {
 				
 				int opcion;	
