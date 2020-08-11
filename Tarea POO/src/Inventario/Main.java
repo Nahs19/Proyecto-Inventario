@@ -13,7 +13,7 @@ public class Main {
 		
 		public static void buscarcodigo(ArrayList<Libro> libro) {
 			Scanner entrada = new Scanner (System.in);
-			System.out.println("\n Ingrese el c骴igo del libro que desea: ");
+			System.out.println("\n Ingrese el c贸digo del libro que desea: ");
 			int codigoingresado = entrada.nextInt();
 			for (int i=0;i<libro.size();i++) {
 				if (codigoingresado == libro.get(i).getCodigo()) {
@@ -24,7 +24,7 @@ public class Main {
 		
 	       public static void comprarLibro (ArrayList<Libro> libro) {
 			Scanner entrada = new Scanner (System.in);
-			System.out.println("\n Ingrese el c骴igo del libro que desea comprar: ");
+			System.out.println("\n Ingrese el c贸digo del libro que desea comprar: ");
 			int codigoingresado = entrada.nextInt();
 			int cantidad;
 			for (int i=0;i< libro.size();i++) {
@@ -55,7 +55,7 @@ public class Main {
 		}
 			
 		public static void librosCaros(ArrayList<Libro>  libro) {	
-			System.out.println("An醠isis de costos de los libros");	
+			System.out.println("An谩lisis de costos de los libros");	
 			for (int i=0;i< libro.size();i++) {
 				System.out.println( libro.get(i));
 			}			   	
@@ -83,12 +83,12 @@ public class Main {
 		            System.out.println("\n   Menu Principal   ");
 		            System.out.println("*********************");
 		            System.out.println("1. Mostrar lista de libros");
-		            System.out.println("2. Buscar C骴igo");
+		            System.out.println("2. Buscar C贸digo");
 		            System.out.println("3. Comprar Libro");
 		            System.out.println("4. Actualizar");
-		            System.out.println("5. Libros m醩 caros");
+		            System.out.println("5. Libros m谩s caros");
 		            System.out.println("6. Salir");
-		            System.out.println("Digite opcion (1/4): ");
+		            System.out.println("Digite opcion (1/6): ");
 		            opcion = in.nextInt();
 		    			 
 		            switch(opcion){
@@ -98,7 +98,7 @@ public class Main {
 		                case 4: actualizar(libro);break;
 		                case 5: librosCaros(libro);break;
 		                case 6: break;
-		                default: System.out.println("Opcion no v醠ida");//Mensaje de dato err髇eo
+		                default: System.out.println("Opcion no v谩lida");//Mensaje de dato err贸neo
 		            }
 		        }while (opcion != 6);
 		      }
